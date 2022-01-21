@@ -6,8 +6,8 @@ function FindProxyForURL(url, host) {
     //if (!confirmEnding(host, ".com")) {
      //   return "DIRECT";
    // }
-    if ( (host) == "csclient.zlongame.com") {
-        return "PROXY 127.0.0.1:8913";
+    if ( host == "csclient.zlongame.com") {
+        return "PROXY localhost:8913";
     }
     return "DIRECT";
 }
